@@ -23,6 +23,8 @@ Sample points of this colormap are not strictly monotonic increasing, but have t
 
 */
 
+#define _USE_MATH_DEFINES    // to make sure MSVC will load the M_PI define, among others
+
 #include <stdio.h>
 #include <string.h> // strncat
 #include <stdlib.h> // malloc

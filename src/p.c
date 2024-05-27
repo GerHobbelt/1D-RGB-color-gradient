@@ -18,6 +18,8 @@ use gnuplot to create png images from txt files
 
 */
 
+#define _USE_MATH_DEFINES    // to make sure MSVC will load the M_PI define, among others
+
 #include <stdio.h>
 #include <string.h> // strncat
 #include <stdlib.h> // malloc
