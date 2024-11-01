@@ -31,7 +31,7 @@ use gnuplot to create png images from txt files
 
 
 // size of virtual 2D array of pixels
-// each piexel has a RGB color
+// each pixel has a RGB color
 int iWidth = 600;
 int iHeight ; // 
 

@@ -35,7 +35,7 @@ r= 1.000000	 g=0.000000	 b=0.000000
 
 
 // size of virtual 2D array of pixels
-// each piexel has a RGB color
+// each pixel has a RGB color
 int iWidth = 600;
 int iHeight ; // 
 

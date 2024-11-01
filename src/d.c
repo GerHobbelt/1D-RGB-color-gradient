@@ -67,7 +67,7 @@ information.
 
 
 // size of virtual 2D array of pixels
-// each piexel has a RGB color
+// each pixel has a RGB color
 int iWidth = 600;
 int iHeight ; // 
 
@@ -91,11 +91,11 @@ int fMax; // =  sizeof(titles)/sizeof(titles[0]); // 18; // see GiveColor functi
 // add new title here and new function to GiveColor
 
 const char *titles[] = {
-/* multihue */ "RainbowHSV","Linas","Linas2","RainbowFractalizer", "OrangeBlueFractalizer", "RainbowHSP", "HSP", "Magma","Cubehelix", "CoolWarm", 
+/* multi-hue */ "RainbowHSV","Linas","Linas2","RainbowFractalizer", "OrangeBlueFractalizer", "RainbowHSP", "HSP", "Magma","Cubehelix", "CoolWarm", 
 /* single hue */ "GreenCubic", "GreenCubicInv", "GreenCubicRoot", "BlueCubicInv", "RedCubicInv", "GreenSin",
 /* gray */ "Linear","Quadratic","Cubic", "CubicInv", "Sqrt", "Root", "Gamma", "LSin", "SinExp", "Sin" , "Smooth", "Tanh"};
 	
-// use s.c program to update enum from arrray	
+// use s.c program to update enum from array	
 typedef enum  {RainbowHSV , Linas , Linas2 , RainbowFractalizer , OrangeBlueFractalizer , RainbowHSP , HSP , Magma , Cubehelix , CoolWarm , GreenCubic , GreenCubicInv, GreenCubicRoot, BlueCubicInv, RedCubicInv, GreenSin, Linear , Quadratic , Cubic , CubicInv, Sqrt , Root,  Gamma , LSin , SinExp , Sin , Smooth, Tanh } ColorTransferFunctionType; 
 
 
@@ -276,8 +276,8 @@ The amplitude of the sine wave is modulated from its full value at the top of th
 
 double GiveLSin(const double position){
 	
-	// the commensts by P Kovesi
-	// my values are slightly changed to get similar vusual effect
+	// the comments by P Kovesi
+	// my values are slightly changed to get similar visual effect
 	double angle = position*2.0*M_PI; // input of the sin function is an angle in radians in range [0, 2*Pi]
 	double f = iWidth/10.0; // frequency: The wavelength of the sine wave is set at 8 pixels 
 	double s = 0.03*sin(f*angle); // wave range = amplitude of the sine wave = 10% of the total data range	
